@@ -6,9 +6,14 @@
   "author": "Olys6 <oliver@skjevesland.com>",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^18.2.0"
+    "electron": "^18.2.0",
+    "electron-installer-debian": "^3.1.0",
+    "electron-packager": "^15.5.1",
+    "electron-winstaller": "^5.0.0"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . app --platform linux --arch x64 --out dist/",
+    "deb64": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64"
   }
 }
