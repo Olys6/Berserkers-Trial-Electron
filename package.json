@@ -1,0 +1,14 @@
+{
+  "name": "Berserkers-Trial-Electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "git@github.com:Olys6/Berserkers-Trial-Electron.git",
+  "author": "Olys6 <oliver@skjevesland.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^18.2.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}
